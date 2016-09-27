@@ -60,7 +60,7 @@ class ListCommand extends TerminusCommand implements SiteAwareInterface
         }
 
         $backups = $env->backups->getFinishedBackups($backup_element);
-        $data = []
+        $data = [];
         foreach ($backups as $id => $backup) {
             $data[] = [
                 'file'      => $backup->get('filename'),
